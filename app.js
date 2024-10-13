@@ -7,8 +7,9 @@ function cursor1() {
         gsap.to(cursor,{
             x : dets.x,
             y : dets.y,
-            ease : "power4.out",
-            duration : 2
+            ease : "back.out(3)",
+            duration : 2,
+            
         })
     })
     

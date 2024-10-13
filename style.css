@@ -74,7 +74,7 @@ nav h1 , h2{
 
 #cursor{
     width: 7vw;
-    height: 14vh;
+    height: 14.5vh;
     background-color: #2b2420be;
     border-radius: 54%;
     position: absolute;
@@ -82,6 +82,6 @@ nav h1 , h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 15.5px;
     color: #ffffff;
 }
