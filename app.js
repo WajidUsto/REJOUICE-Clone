@@ -1,5 +1,6 @@
 let cursor = document.querySelector("#cursor")
 let page1 = document.querySelector(".page-1")
+let page2 = document.querySelector(".page-2")
 
 
 function locoScroll() {
@@ -58,3 +59,43 @@ page1.addEventListener("mouseleave",function (dets) {
 })
 }
 cursorEffect()
+
+// function page2Animation() {
+
+    
+// }
+
+// page2Animation()
+
+let tl = gsap.timeline()
+
+tl.from(".page-2-content",{
+    y : 70,
+    duration : 2,
+    opacity : 0,
+    delay : 0.2,
+    stagger : 0.2,
+    scrollTrigger:{
+        trigger : ".page-2",
+        scroller : "#main",
+        start : "top 50%",
+        end : "top 40%",
+        markers : true,
+        scrub : 2
+    }
+})
+
+
+// gsap.from(".page-2-line-hr",{
+//     x : 200,
+//     scale : "X-100",
+//     opacity : 0,
+//     duration : 0.5,
+//     scrollTrigger:{
+//         trigger : ".page-2",
+//         scroller : "#main",
+//         start : "top 50%",
+//         end : "bottom 100%",
+//         markers : true,
+//     }
+// })
