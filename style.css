@@ -97,7 +97,9 @@ nav h1 , h2{
     height: 100vh;
     background-color: white;
     position: relative;
-    
+}
+.page-2-content ,.page-2-upper-text ,.page-2-bottom-text{
+    overflow: hidden;
 }
 .page-2-upper-text{
     display: flex;
@@ -113,4 +115,11 @@ nav h1 , h2{
     font-weight: normal;
     padding-left: 2px;
 
+}
+
+.page-2-bottom-text span{
+    font-size: 4.2vw;
+}
+.page-2-bottom-text {
+    margin: 20px;
 }

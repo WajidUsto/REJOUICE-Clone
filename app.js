@@ -98,3 +98,17 @@ tl.from(".page-2-line-hr",{
         scrub : 3
     }
 })
+tl.from(".page-2-bottom-text",{
+    y : 120,
+    duration : 1,
+    opacity : 0,
+    stagger : 0.25,
+    scrollTrigger:{
+        trigger : ".page-2",
+        scroller : "#main",
+        start : "top 50%",
+        end : "top 40%",
+        // markers : true,
+        scrub : 3
+    }
+})
