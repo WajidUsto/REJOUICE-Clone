@@ -1,18 +1,27 @@
 let cursor = document.querySelector("#cursor")
-let main = document.querySelector("#main")
+let page1 = document.querySelector(".page-1")
 
-function cursor1() {
-    main.addEventListener("mousemove",function cur (dets) {
+function cursorEffect() {
+    page1.addEventListener("mousemove",function cur (dets) {
         cursor.innerHTML = "Play Reel"
         gsap.to(cursor,{
             x : dets.x,
             y : dets.y,
-            ease : "back.out(3)",
-            duration : 2,
-            
+            ease : "back.out(2)",
+            duration : 0.8,
         })
     })
-    
+page1.addEventListener("mouseenter",function () {
+    gsap.to(cursor,{
+        opacity : 1,
+        scale : 1
+    })
+})
+page1.addEventListener("mouseleave",function (dets) {
+    gsap.to(cursor,{
+        opacity : 0,
+        scale : 0
+    })
+})
 }
-
-cursor1()
+cursorEffect()
