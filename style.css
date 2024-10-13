@@ -6,23 +6,24 @@
 }
 @font-face {
     font-family: "Rejouice";
-    src: url(./Assets/Fonts/Rejouice-Headline.woff2);
+    src: url(./Assets/Fonts/Rejouice-Headline.ttf);
 }
 @font-face {
     font-family: "Rejouice2";
-    src: url(./Assets/Fonts/NBInternationalProBoo.woff2);
+    src: url(./Assets/Fonts/NBInternationalProBoo.ttf);
 }
 html,
 body{
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 
 .page-1{
     width: 100%;
     height: 100vh;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     position: relative;
 }
 
@@ -36,21 +37,51 @@ body{
 .page-1-content{
     width: 100%;
     height: 100%;
-    /* background-color: black; */
     position: relative;
     color: white;
-    z-index: 9;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vh 3vw;
+    padding: 4vh 3vw;
     font-size: 12px;
     
 }
-nav h3{
-    font-weight: 200;
-    letter-spacing: 2px;
+nav h1 , h2{
+    letter-spacing: 1px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.page-1-text h1 span{
+    font-family: "Rejouice";
+    font-size: 24vw;
+    line-height: -2vh;
+    font-weight: 700;
+}
+.page-1-text{
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 13vw;
+}
+
+
+#cursor{
+    width: 7vw;
+    height: 14vh;
+    background-color: #2b2420be;
+    border-radius: 54%;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #ffffff;
 }
