@@ -70,37 +70,37 @@ cursorEffect()
 let tl = gsap.timeline()
 
 tl.from(".page-2-upper-text h1 span",{
-    y : 80,
-    duration : 1,
+    y : 100,
+    duration : 3,
     opacity : 0,
-    stagger : 0.25,
+    stagger : 0.50,
     scrollTrigger:{
         trigger : ".page-2",
         scroller : "#main",
         start : "top 50%",
         end : "top 40%",
         // markers : true,
-        scrub : 3
+        scrub : 2
     }
 })
 
-tl.from(".page-2-line-hr",{
-    y : 50,
-    duration : 1,
+tl.from(".page-2-line",{
+    y : 100,
+    duration : 3,
     opacity : 0,
-    stagger : 0.25,
+    stagger : 0.20,
     scrollTrigger:{
         trigger : ".page-2",
         scroller : "#main",
         start : "top 50%",
         end : "top 40%",
         // markers : true,
-        scrub : 3
+        scrub : 2
     }
 })
 tl.from(".page-2-bottom-text",{
-    y : 120,
-    duration : 1,
+    y : 100,
+    duration : 3,
     opacity : 0,
     stagger : 0.25,
     scrollTrigger:{
@@ -109,6 +109,6 @@ tl.from(".page-2-bottom-text",{
         start : "top 50%",
         end : "top 40%",
         // markers : true,
-        scrub : 3
+        scrub : 2
     }
 })
