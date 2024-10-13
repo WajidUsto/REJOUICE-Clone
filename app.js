@@ -69,33 +69,32 @@ cursorEffect()
 
 let tl = gsap.timeline()
 
-tl.from(".page-2-content",{
-    y : 70,
-    duration : 2,
+tl.from(".page-2-upper-text h1 span",{
+    y : 80,
+    duration : 1,
     opacity : 0,
-    delay : 0.2,
-    stagger : 0.2,
+    stagger : 0.25,
     scrollTrigger:{
         trigger : ".page-2",
         scroller : "#main",
         start : "top 50%",
         end : "top 40%",
-        markers : true,
-        scrub : 2
+        // markers : true,
+        scrub : 3
     }
 })
 
-
-// gsap.from(".page-2-line-hr",{
-//     x : 200,
-//     scale : "X-100",
-//     opacity : 0,
-//     duration : 0.5,
-//     scrollTrigger:{
-//         trigger : ".page-2",
-//         scroller : "#main",
-//         start : "top 50%",
-//         end : "bottom 100%",
-//         markers : true,
-//     }
-// })
+tl.from(".page-2-line-hr",{
+    y : 50,
+    duration : 1,
+    opacity : 0,
+    stagger : 0.25,
+    scrollTrigger:{
+        trigger : ".page-2",
+        scroller : "#main",
+        start : "top 50%",
+        end : "top 40%",
+        // markers : true,
+        scrub : 3
+    }
+})

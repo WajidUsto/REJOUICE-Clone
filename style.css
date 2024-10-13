@@ -84,6 +84,9 @@ nav h1 , h2{
     cursor: auto;
     transform: translateX(-50%, -50%)
 }
+.page-2-upper-text h1 span{
+    display: inline-block;
+}
 .page-2-line-hr{
     padding: 0.2px;
     background: #000000;
@@ -94,18 +97,20 @@ nav h1 , h2{
     height: 100vh;
     background-color: white;
     position: relative;
+    
 }
-
-
 .page-2-upper-text{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 5vh;
+    overflow: hidden;
     padding: 2vw
+    
 }
 .page-2-upper-text h1{
     font-size: 1.7vw;
     font-weight: normal;
+    padding-left: 2px;
 
 }
