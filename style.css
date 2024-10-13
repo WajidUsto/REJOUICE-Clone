@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Rejouice2";
+}
+@font-face {
+    font-family: "Rejouice";
+    src: url(./Assets/Fonts/Rejouice-Headline.woff2);
+}
+@font-face {
+    font-family: "Rejouice2";
+    src: url(./Assets/Fonts/NBInternationalProBoo.woff2);
 }
 html,
 body{
@@ -31,4 +40,12 @@ body{
     position: relative;
     color: white;
     z-index: 9;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 13px;
 }
