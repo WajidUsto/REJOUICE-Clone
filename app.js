@@ -78,44 +78,58 @@ let tl = gsap.timeline();
 
 tl.from(".page-2-upper-text h1 span", {
     y: 100,
-    duration: 3,
+    duration: 2,
     opacity: 0,
     stagger: 0.5,
     scrollTrigger: {
         trigger: ".page-2",
         scroller: "#main",
         start: "top 50%",
-        end: "top 40%",
-        // markers : true,
+        end: "bottom 100%",
+        markers : true,
         scrub: 2,
     },
 });
 
 tl.from(".page-2-line", {
     y: 100,
-    duration: 3,
+    duration: 2,
     opacity: 0,
     stagger: 0.2,
     scrollTrigger: {
         trigger: ".page-2",
         scroller: "#main",
         start: "top 50%",
-        end: "top 40%",
-        // markers : true,
+        end: "bottom 100%",
+        markers : true,
         scrub: 2,
     },
 });
 tl.from(".page-2-bottom-text", {
     y: 100,
-    duration: 3,
+    duration: 2,
     opacity: 0,
     stagger: 0.25,
     scrollTrigger: {
         trigger: ".page-2",
         scroller: "#main",
         start: "top 50%",
-        end: "top 40%",
-        // markers : true,
+        end: "bottom 100%",
+        markers : true,
         scrub: 2,
+    },
+});
+tl.from(".page-3-top", {
+    y: 100,
+    duration: 2,
+    opacity: 0,
+    stagger: 0.25,
+    scrollTrigger: {
+        trigger: ".page-3",
+        scroller: "#main",
+        start: "top 50%",
+        end: "bottom 100%",
+        markers : true,
+        scrub: 1,
     },
 });

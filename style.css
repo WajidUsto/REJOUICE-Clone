@@ -164,3 +164,53 @@ h2 {
 
 /* Page 2 Ended */
 /* Page 2 Ended */
+
+
+
+/* Page 3 Started */
+/* Page 3 Started */
+
+
+.page-3{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #ff0000; */
+}
+.page-3-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5vw 1.5vh;
+    line-height: 9.2vh;
+    
+}
+
+.page-3-top h2{
+    font-size: 4.3vw;
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    display: flex;
+    gap: 18px;
+}
+
+.page-3-top h4{
+    font-size: 1.3vw;
+    cursor: pointer;
+    color: rgb(0 0 0 / 87%);
+    font-weight: 500;
+}
+.page-3-top h4 i{
+    font-size: 22px;
+    cursor: pointer;
+    padding: 6px;
+}
+.page-3-model{
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    font-size: 0.9vw;
+    margin-left: 10px;
+    cursor: pointer;
+}
