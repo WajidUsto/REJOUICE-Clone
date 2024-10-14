@@ -173,7 +173,7 @@ h2 {
 
 .page-3{
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     /* background-color: #ff0000; */
 }
 .page-3-top{
@@ -214,3 +214,18 @@ h2 {
     margin-left: 10px;
     cursor: pointer;
 }
+
+.cards-container{
+    margin-top: 25vh;
+}
+.page-bottom-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    font-size: 1.9vh;
+}
+
+
+
+
