@@ -65,6 +65,20 @@ h2 {
     color: #ffffff;
     cursor: auto;
 }
+#cursor2 {
+    width: 7vw;
+    height: 14.5vh;
+    background-color: #000000be;
+    border-radius: 54%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15.5px;
+    color: #ffffff;
+    /* transform: translate(-50%, -50%); */
+}
 
 /* Page 1 Started */
 /* Page 1 Started */

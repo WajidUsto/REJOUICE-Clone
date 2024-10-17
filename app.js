@@ -1,6 +1,8 @@
 let cursor = document.querySelector("#cursor");
+let cursor2 = document.querySelector("#cursor2");
 let page1 = document.querySelector(".page-1");
 let page2 = document.querySelector(".page-2");
+let page5 = document.querySelector("#page-5");
 
 function locoScroll() {
     gsap.registerPlugin(ScrollTrigger);
@@ -186,3 +188,36 @@ tl.from(".page-4-bottom-text span", {
         scrub: 2,
     }
 });
+
+
+// page 5 Animation
+// page 5 Animation
+
+page5.addEventListener("mousemove", function cur2(dets) {
+    cursor2.innerHTML = "Take One!";
+    // console.log(dets.x);
+    gsap.to(cursor2, {
+        x: dets.x,
+        y: dets.y,
+        ease: "back.out(3)",
+        duration: 1.2,
+    });
+});
+
+page5.addEventListener("mouseenter", function () {
+    gsap.to(cursor2, {
+        opacity: 1,
+        scale: 1,
+    });
+});
+page5.addEventListener("mouseleave", function () {
+    gsap.to(cursor2, {
+        opacity: 0,
+        scale: 0,
+    });
+});
+
+// function cursorEffect2() {
+    
+// }
+// cursorEffect2()
