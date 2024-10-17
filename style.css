@@ -70,14 +70,14 @@ h2 {
     height: 14.5vh;
     background-color: #000000be;
     border-radius: 54%;
-    position: fixed;
-    z-index: 10;
+    position: absolute;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 15.5px;
     color: #ffffff;
-    /* transform: translate(-50%, -50%); */
+    cursor: auto;
 }
 
 /* Page 1 Started */
@@ -280,8 +280,6 @@ h2 {
     transition: all ease-in-out 0.5s;
     overflow-x: hidden;
 }
-
-
 .card img:hover{
     opacity: 0;
 }
@@ -298,7 +296,7 @@ h2 {
 }
 
 
-page-2-upper-text h1 span {
+.page-2-upper-text h1 span {
     display: inline-block;
     padding-left: 4px;
 
@@ -395,34 +393,64 @@ page-2-upper-text h1 span {
     font-weight: 100;
 }
 
+/* Page 5 Ended  */
+/* Page 5 Ended */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Page 6 Started */
+/* Page 6 Started */
 
 
 #page-6{
     width: 100%;
+    height: 80vh;
+}
+
+.page-6-upper-text h1 span {
+    display: inline-block;
+    padding-left: 4px;
+
+
+}
+
+.page-6-line {
+    margin: 0 2vw;
+    border-bottom: 1.5px solid black;
+}
+
+.page-6 {
+    width: 100%;
     height: 100vh;
-    background-color: red;
+    background-color: white;
+    position: relative;
+}
+
+.page-6-content,
+.page-6-upper-text,
+.page-6-bottom-text {
+    overflow: hidden;
+}
+
+.page-6-upper-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+    overflow: hidden;
+    padding: 2vw
+}
+
+.page-6-upper-text h1 {
+    font-size: 1.7vw;
+    font-weight: normal;
+    padding-left: 2px;
+
+}
+
+.page-6-bottom-text span {
+    font-size: 4.2vw;
+}
+
+.page-6-bottom-text {
+    margin: 20px;
 }

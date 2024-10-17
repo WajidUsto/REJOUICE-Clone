@@ -51,7 +51,7 @@ function cursorEffect() {
             x: dets.x,
             y: dets.y,
             ease: "back.out(2)",
-            duration: 0.8,
+            duration: 3,
         });
     });
 
@@ -193,31 +193,76 @@ tl.from(".page-4-bottom-text span", {
 // page 5 Animation
 // page 5 Animation
 
-page5.addEventListener("mousemove", function cur2(dets) {
-    cursor2.innerHTML = "Take One!";
-    // console.log(dets.x);
-    gsap.to(cursor2, {
-        x: dets.x,
-        y: dets.y,
-        ease: "back.out(3)",
-        duration: 1.2,
+function cursorEffect2() {
+    page5.addEventListener("mousemove", function cur2(dets) {
+        cursor2.innerHTML = "Take One!";
+        gsap.to(cursor2, {
+            x: dets.x,
+            y: dets.y,
+            ease: "expo.out",
+            duration: 3,
+            transform: "translate(-50%, -50%)"
+        });
     });
-});
-
-page5.addEventListener("mouseenter", function () {
-    gsap.to(cursor2, {
-        opacity: 1,
-        scale: 1,
-    });
-});
-page5.addEventListener("mouseleave", function () {
-    gsap.to(cursor2, {
-        opacity: 0,
-        scale: 0,
-    });
-});
-
-// function cursorEffect2() {
     
-// }
-// cursorEffect2()
+    page5.addEventListener("mouseenter", function () {
+        gsap.to(cursor2, {
+            opacity: 1,
+            scale: 1,
+        });
+    });
+    page5.addEventListener("mouseleave", function () {
+        gsap.to(cursor2, {
+            opacity: 0,
+            scale: 0,
+        });
+    });
+}
+cursorEffect2()
+
+function page6text() {
+    tl.from(".page-6-upper-text h1 span", {
+        y: 100,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.8,
+        scrollTrigger: {
+            trigger: "#page-6-content",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    });
+    
+    tl.from(".page-6-line", {
+        y: 50,
+        duration: 2,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#page-6-content",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    });
+    tl.from(".page-6-bottom-text span", {
+        y: 100,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.6,
+        scrollTrigger: {
+            trigger: "#page-6-content",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            markers : true,
+            scrub: 2,
+        }
+    });
+}
+
+page6text()
