@@ -76,6 +76,9 @@ cursorEffect();
 
 let tl = gsap.timeline();
 
+// Page 1 Animation
+// Page 1 Animation
+
 tl.from(".page-2-upper-text h1 span", {
     y: 100,
     duration: 2,
@@ -90,6 +93,9 @@ tl.from(".page-2-upper-text h1 span", {
         scrub: 2,
     },
 });
+
+// Page 2 Animation
+// Page 2 Animation
 
 tl.from(".page-2-line", {
     y: 100,
@@ -121,15 +127,62 @@ tl.from(".page-2-bottom-text", {
 });
 tl.from(".page-3-top", {
     y: 100,
+    duration: 3,
+    opacity: 0,
+    stagger: 0.5,
+    scrollTrigger: {
+        trigger: ".page-3-top",
+        scroller: "#main",
+        start: "top 50%",
+        end: "bottom 100%",
+        markers : true,
+        scrub: 2,
+    },
+});
+
+// page 4 Animation
+// page 4 Animation
+
+
+tl.from(".page-4-upper-text h1 span", {
+    y: 100,
     duration: 2,
     opacity: 0,
-    stagger: 0.25,
+    stagger: 0.8,
     scrollTrigger: {
-        trigger: ".page-3",
+        trigger: ".page-4-content",
         scroller: "#main",
         start: "top 50%",
         end: "bottom 100%",
         // markers : true,
-        scrub: 1,
+        scrub: 2,
     },
+});
+
+tl.from(".page-4-line", {
+    y: 50,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".page-4-content",
+        scroller: "#main",
+        start: "top 50%",
+        end: "bottom 100%",
+        // markers : true,
+        scrub: 2,
+    },
+});
+tl.from(".page-4-bottom-text span", {
+    y: 100,
+    duration: 2,
+    opacity: 0,
+    stagger: 0.6,
+    scrollTrigger: {
+        trigger: ".page-4-content",
+        scroller: "#main",
+        start: "top 50%",
+        end: "bottom 100%",
+        // markers : true,
+        scrub: 2,
+    }
 });

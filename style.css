@@ -273,12 +273,64 @@ h2 {
 }
 
 
+/* page 4 started */
+/* page 4 started */
 
+.page-4{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 1vh;
+    /* background-color: black; */
+}
+
+
+page-2-upper-text h1 span {
+    display: inline-block;
+    padding-left: 4px;
+
+
+}
+
+.page-4-line {
+    margin: 0 2vw;
+    border-bottom: 1.5px solid black;
+}
 
 .page-4{
     width: 100%;
     height: 100vh;
-    /* background-color: black; */
+    background-color: white;
+    position: relative;
+}
+
+.page-4-content,
+.page-4-upper-text,
+.page-4-bottom-text {
+    overflow: hidden;
+}
+
+.page-4-upper-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5vh;
+    overflow: hidden;
+    padding: 2vw
+}
+
+.page-4-upper-text h1 {
+    font-size: 1.7vw;
+    font-weight: normal;
+    padding-left: 2px;
+
+}
+
+.page-4-bottom-text span {
+    font-size: 4.2vw;
+}
+
+.page-4-bottom-text {
+    margin: 20px;
 }
 
 
