@@ -193,6 +193,21 @@ tl.from(".page-4-bottom-text span", {
 // page 5 Animation
 // page 5 Animation
 
+function page5video() {
+    tl.from("#page-5",{
+        opacity : 0,
+        scrollTrigger: {
+            trigger: "#cursor2",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    })
+}
+page5video()
+
 function cursorEffect2() {
     page5.addEventListener("mousemove", function cur2(dets) {
         cursor2.innerHTML = "Take One!";
@@ -259,10 +274,9 @@ function page6text() {
             scroller: "#main",
             start: "top 50%",
             end: "bottom 100%",
-            markers : true,
+            // markers : true,
             scrub: 2,
         }
     });
 }
-
 page6text()
