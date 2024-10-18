@@ -4,6 +4,45 @@ let page1 = document.querySelector(".page-1");
 let page2 = document.querySelector(".page-2");
 let page5 = document.querySelector("#page-5");
 
+
+// Loader
+
+
+let ld = gsap.timeline()
+
+function loader() {
+    
+    ld.from("#loader h3",{
+        x:50,
+        opacity : 0,
+        duration : 1,
+        stagger:0.1,
+        delay: 2
+    })
+    ld.to("#loader h3",{
+        x:-20,
+        opacity : 0,
+        duration : 1,
+        stagger:0.2
+    })
+    ld.to("#loader",{
+        opacity : 0,
+        duration : 0.5
+    })
+    ld.to("#loader",{
+        display:"none",
+        duration : 0.5
+    })
+    ld.from(".page-1-content h1 span",{
+        y : 60,
+        opacity:0,
+        stagger : 0.1
+    })
+}
+
+loader()
+
+
 function locoScroll() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -81,113 +120,117 @@ let tl = gsap.timeline();
 // Page 1 Animation
 // Page 1 Animation
 
-tl.from(".page-2-upper-text h1 span", {
-    y: 100,
-    duration: 2,
-    opacity: 0,
-    stagger: 0.5,
-    scrollTrigger: {
-        trigger: ".page-2",
-        scroller: "#main",
-        start: "top 50%",
-        end: "bottom 100%",
-        // markers : true,
-        scrub: 2,
-    },
-});
-
-// Page 2 Animation
-// Page 2 Animation
-
-tl.from(".page-2-line", {
-    y: 100,
-    duration: 2,
-    opacity: 0,
-    stagger: 0.2,
-    scrollTrigger: {
-        trigger: ".page-2",
-        scroller: "#main",
-        start: "top 50%",
-        end: "bottom 100%",
-        // markers : true,
-        scrub: 2,
-    },
-});
-tl.from(".page-2-bottom-text", {
-    y: 100,
-    duration: 2,
-    opacity: 0,
-    stagger: 0.25,
-    scrollTrigger: {
-        trigger: ".page-2",
-        scroller: "#main",
-        start: "top 50%",
-        end: "bottom 100%",
-        // markers : true,
-        scrub: 2,
-    },
-});
-tl.from(".page-3-top", {
-    y: 100,
-    duration: 3,
-    opacity: 0,
-    stagger: 0.5,
-    scrollTrigger: {
-        trigger: ".page-3-top",
-        scroller: "#main",
-        start: "top 50%",
-        end: "bottom 100%",
-        // markers : true,
-        scrub: 2,
-    },
-});
-
-// page 4 Animation
-// page 4 Animation
-
-
-tl.from(".page-4-upper-text h1 span", {
-    y: 100,
-    duration: 2,
-    opacity: 0,
-    stagger: 0.8,
-    scrollTrigger: {
-        trigger: ".page-4-content",
-        scroller: "#main",
-        start: "top 50%",
-        end: "bottom 100%",
-        // markers : true,
-        scrub: 2,
-    },
-});
-
-tl.from(".page-4-line", {
-    y: 50,
-    duration: 2,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".page-4-content",
-        scroller: "#main",
-        start: "top 50%",
-        end: "bottom 100%",
-        // markers : true,
-        scrub: 2,
-    },
-});
-tl.from(".page-4-bottom-text span", {
-    y: 100,
-    duration: 2,
-    opacity: 0,
-    stagger: 0.6,
-    scrollTrigger: {
-        trigger: ".page-4-content",
-        scroller: "#main",
-        start: "top 50%",
-        end: "bottom 100%",
-        // markers : true,
-        scrub: 2,
-    }
-});
+function mainAnimation() {
+    tl.from(".page-2-upper-text h1 span", {
+        y: 100,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.5,
+        scrollTrigger: {
+            trigger: ".page-2",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    });
+    
+    // Page 2 Animation
+    // Page 2 Animation
+    
+    tl.from(".page-2-line", {
+        y: 100,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".page-2",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    });
+    tl.from(".page-2-bottom-text", {
+        y: 100,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.25,
+        scrollTrigger: {
+            trigger: ".page-2",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    });
+    tl.from(".page-3-top", {
+        y: 100,
+        duration: 3,
+        opacity: 0,
+        stagger: 0.5,
+        scrollTrigger: {
+            trigger: ".page-3-top",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    });
+    
+    // page 4 Animation
+    // page 4 Animation
+    
+    
+    tl.from(".page-4-upper-text h1 span", {
+        y: 100,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.8,
+        scrollTrigger: {
+            trigger: ".page-4-content",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    });
+    
+    tl.from(".page-4-line", {
+        y: 50,
+        duration: 2,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".page-4-content",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        },
+    });
+    tl.from(".page-4-bottom-text span", {
+        y: 100,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.6,
+        scrollTrigger: {
+            trigger: ".page-4-content",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            // markers : true,
+            scrub: 2,
+        }
+    });
+    
+}
+mainAnimation()
 
 
 // page 5 Animation

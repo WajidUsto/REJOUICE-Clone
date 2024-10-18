@@ -24,6 +24,24 @@ body {
     src: url(./Assets/Fonts/NBInternationalProBoo.ttf);
 }
 
+/* Loader */
+#loader{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 8px;
+    position: fixed;
+}
+#loader h3{
+    font-size: 1.7rem;
+}
+/* Loader */
+
 /* NavBar Started */
 /* NavBar Started */
 
@@ -105,6 +123,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .page-1-text h1 span {
@@ -112,6 +131,7 @@ h2 {
     font-size: 24vw;
     line-height: -2vh;
     font-weight: 700;
+    display: inline-block;
 }
 
 .page-1-text {
@@ -459,3 +479,17 @@ h2 {
 /* Page 7 Started */
 /* Page 7 Started */
 
+#page-7{
+    width: 100%;
+    height: 100vh;
+}
+.page-7-content{
+    width: 96%;
+    margin-left: 2%;
+}
+.page-7-content h1{
+    font-family: "Rejouice";
+    font-size: 9rem;
+    font-weight: 100;
+    border-bottom: 1px solid black;
+}
