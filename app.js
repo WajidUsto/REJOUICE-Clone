@@ -90,7 +90,7 @@ function cursorEffect() {
             x: dets.x,
             y: dets.y,
             ease: "back.out(2)",
-            duration: 3,
+            duration: 1.5,
         });
     });
 
