@@ -343,6 +343,24 @@ page6text()
     });
 
 
+// Footer Animation
+
+tl.from(".bottom-container span svg", {
+    y: -70,
+    duration: 2,
+    opacity: 0,
+    stagger: 0.2,
+    scrollTrigger: {
+        trigger: ".bottom-container span",
+        scroller: "#main",
+        start: "top 70%",
+        end: "bottom 55%",
+        markers : true,
+        scrub: 2,
+    },
+});
+
+
 // Swiper Js
 
 
