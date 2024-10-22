@@ -33,9 +33,14 @@ function loader() {
         duration: 0.5
     })
     ld.from(".page-1-content h1 span", {
-        y: 60,
+        y: 80,
         opacity: 0,
-        stagger: 0.1
+        stagger: 0.10
+    })
+    ld.from(cursor,{
+        delay : 2,
+        duration : 1,
+        opacity : 0
     })
 }
 

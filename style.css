@@ -157,12 +157,11 @@ h2 {
 
 }
 
-.page-1-text h1 span {
-    font-family: "Rejouice";
-    font-size: 24vw;
-    line-height: -2vh;
-    font-weight: 700;
-    display: inline-block;
+.page-1-text h1 span{
+    position: absolute;
+    width: 90vw;
+    bottom: -3vh;
+    left: 5vw;
 }
 
 .page-1-text {
@@ -627,14 +626,14 @@ h2 {
 
 footer{
     width: 100%;
-    height: 100vh;
+    height: 101vh;
+
     background-color: #0E0E0E;
 }
 .top-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
     padding: 2vh 2vw;
     color: #DEDBD2;
 }
@@ -670,6 +669,7 @@ footer{
 
 .r-right-cont li ,.r-left-cont li{
     list-style: none;
+    cursor: pointer;
 }
 .r-right-cont li a ,.r-left-cont li a{
     list-style: none;
@@ -695,33 +695,11 @@ footer{
     gap: 4vw;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 3.5vh;
 }
 
-
-.underline-hover {
-    position: relative;
-    display: inline-block;
-    color: #333;
-    text-decoration: none;
-    padding-bottom: 2px;
-}
-
-/* Initial state of the pseudo-element */
-.underline-hover::before {
-    content: '';
+.bottom-container span svg{
     position: absolute;
-    width: 100%;
-    height: 2px;
+    width: 90vw;
     bottom: 0;
-    left: 0;
-    background-color: white;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Hover effect */
-.underline-hover:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
 }
