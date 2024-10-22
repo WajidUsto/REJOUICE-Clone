@@ -529,14 +529,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
 }
 
 .scroller{
-    width: 100%;
+    /* width: 100%; */
     cursor: grab;
     margin-top: -3.5vh;
-    z-index: 50;
+    z-index: 80;
     position: relative;
 }
 

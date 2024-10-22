@@ -4,7 +4,6 @@ let page1 = document.querySelector(".page-1");
 let page2 = document.querySelector(".page-2");
 let page5 = document.querySelector("#page-5");
 
-
 // Loader
 
 
@@ -100,7 +99,7 @@ function cursorEffect() {
             scale: 1,
         });
     });
-    page1.addEventListener("mouseleave", function (dets) {
+    page1.addEventListener("mouseleave", function () {
         gsap.to(cursor, {
             opacity: 0,
             scale: 0,
@@ -327,16 +326,13 @@ page6text()
 
 // Swiper Js
 
+
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: loop,
+    slidesPerView: 4,
     spaceBetween: 20,
     loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+    autoplay: {
+        delay: 1200,
+        disableOnInteraction: true,
     },
 });
