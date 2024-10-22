@@ -592,7 +592,7 @@ h2 {
 
 #page-8{
     width: 100%;
-    min-height : 60vh;
+    height : 60vh;
     /* background-color: red; */
 }
 
@@ -619,4 +619,109 @@ h2 {
 }
 .bottom-text{
     overflow: hidden;
+}
+
+
+/* Page 9 Started*/
+/* Page 9 Started*/
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #0E0E0E;
+}
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    padding: 2vh 2vw;
+    color: #DEDBD2;
+}
+.left-cont{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3.5vh;
+    padding-top: 2vh;
+}
+.left-cont button{
+    padding: 2.5vh 1.6vw;
+    border-radius: 50px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    font-size: 1.8vh;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+    letter-spacing: 1px;
+}
+.left-cont button:hover{
+    background-color: white;
+    color: black;
+    
+}
+.left-cont h1{
+    font-weight: 100;
+    font-size: 3.9vh;
+}
+
+
+.r-right-cont li ,.r-left-cont li{
+    list-style: none;
+}
+.r-right-cont li a ,.r-left-cont li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    padding-bottom: 2px;
+}
+
+.r-left-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.r-right-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.right-cont{
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+/* Initial state of the pseudo-element */
+.underline-hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.underline-hover:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
 }

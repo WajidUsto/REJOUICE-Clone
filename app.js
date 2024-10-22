@@ -332,7 +332,7 @@ page6text()
             scroller: "#main",
             start: "top 50%",
             end: "bottom 100%",
-            markers : true,
+            // markers : true,
             scrub: 2,
         },
     });
@@ -345,8 +345,4 @@ var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 20,
     loop: true,
-    autoplay: {
-        delay: 1200,
-        disableOnInteraction: true,
-    },
 });
