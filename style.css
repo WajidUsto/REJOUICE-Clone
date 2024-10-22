@@ -9,6 +9,7 @@ html,
 body {
     width: 100%;
     height: 100%;
+    background-color: #FAF8F3;
 }
 
 /* Fonts */
@@ -72,16 +73,13 @@ nav {
     
 }
 
-
 .right-nav{
     height: 3.2vh;
     overflow: hidden;
 }
-
 .right-nav h2{
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
 }
-
 .right-nav:hover .right-h2{
     margin-top: -3vh;
     
@@ -486,10 +484,9 @@ h2 {
     height: 100vh;
     background-color: white;
     position: relative;
+    display: inline-block;
 }
 
-.page-6-content,
-.page-6-upper-text,
 .page-6-bottom-text {
     overflow: hidden;
 }
@@ -526,7 +523,7 @@ h2 {
 
 #page-7 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .page-7-content {
@@ -559,6 +556,7 @@ h2 {
     align-items: flex-end;
 }
 
+
 .scroller{
     width: 100%;
     cursor: grab;
@@ -586,4 +584,39 @@ h2 {
     display: flex;
     align-items: flex-end;
     -webkit-user-select: none;
+}
+
+
+/* Page 8 Started */
+/* Page 8 Started */
+
+#page-8{
+    width: 100%;
+    min-height : 60vh;
+    /* background-color: red; */
+}
+
+.page-8-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2vh;
+    padding: 5vh 0;
+}
+.top-text h3{
+    letter-spacing: 1.2px;
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+.bottom-text h1{
+    font-size: 4.5vw;
+    padding-top: 2vh;
+    font-weight: 100;
+    border-bottom: 4px solid black;
+    cursor: pointer;
+    
+}
+.bottom-text{
+    overflow: hidden;
 }

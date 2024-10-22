@@ -319,6 +319,24 @@ function page6text() {
 }
 page6text()
 
+// page 8 Animation
+// page 8 Animation
+
+
+    tl.from(".bottom-text h1", {
+        y: 100,
+        duration: 2,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: "#page-8",
+            scroller: "#main",
+            start: "top 50%",
+            end: "bottom 100%",
+            markers : true,
+            scrub: 2,
+        },
+    });
+
 
 // Swiper Js
 
