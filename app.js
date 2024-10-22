@@ -248,6 +248,10 @@ function page5video() {
             scrub: 2,
         },
     })
+    tl.from(cursor2, {
+        delay :2,
+        duration : 2,
+    })
 }
 page5video()
 
@@ -355,7 +359,7 @@ tl.from(".bottom-container span svg", {
         scroller: "#main",
         start: "top 70%",
         end: "bottom 55%",
-        markers : true,
+        // markers : true,
         scrub: 2,
     },
 });
