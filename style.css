@@ -25,7 +25,7 @@ body {
 }
 
 /* Loader */
-#loader{
+#loader {
     width: 100%;
     height: 100%;
     background-color: black;
@@ -36,10 +36,14 @@ body {
     color: #fff;
     gap: 8px;
     position: fixed;
+
 }
-#loader h3{
+
+#loader h3 {
     font-size: 1.7rem;
+    font-weight: 100;
 }
+
 /* Loader */
 
 /* NavBar Started */
@@ -83,6 +87,7 @@ h2 {
     color: #ffffff;
     cursor: auto;
 }
+
 #cursor2 {
     width: 7vw;
     height: 14.5vh;
@@ -123,7 +128,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
 .page-1-text h1 span {
@@ -205,23 +210,24 @@ h2 {
 /* Page 3 Started */
 
 
-.page-3{
+.page-3 {
     width: 100%;
     min-height: 100%;
-    
+
     /* background-color: #ff0000; */
 }
-.page-3-top{
+
+.page-3-top {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 1.5vw 1.5vh;
     line-height: 9.2vh;
-    
+
 }
 
-.page-3-top h2{
+.page-3-top h2 {
     font-size: 4.3vw;
     cursor: pointer;
     border-bottom: 3px solid black;
@@ -229,18 +235,20 @@ h2 {
     gap: 18px;
 }
 
-.page-3-top h4{
+.page-3-top h4 {
     font-size: 1.3vw;
     cursor: pointer;
     color: rgb(0 0 0 / 87%);
     font-weight: 500;
 }
-.page-3-top h4 i{
+
+.page-3-top h4 i {
     font-size: 22px;
     cursor: pointer;
     padding: 6px;
 }
-.page-3-model{
+
+.page-3-model {
     border-radius: 50px;
     color: white;
     background-color: black;
@@ -250,10 +258,11 @@ h2 {
     cursor: pointer;
 }
 
-.cards-container{
+.cards-container {
     margin-top: 25vh;
 }
-.page-bottom-text{
+
+.page-bottom-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,7 +271,7 @@ h2 {
 }
 
 
-.page-3-cards{
+.page-3-cards {
     width: 95%;
     height: 80vh;
     /* background-color: red; */
@@ -272,7 +281,7 @@ h2 {
     margin-left: 2.5%;
 }
 
-.page-3-cards .card{
+.page-3-cards .card {
     width: 32.8%;
     height: 100%;
     /* background-color: aqua; */
@@ -280,7 +289,7 @@ h2 {
     overflow: hidden;
 }
 
-.card video{
+.card video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -289,7 +298,8 @@ h2 {
     overflow-x: hidden;
 
 }
-.card img{
+
+.card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -300,7 +310,8 @@ h2 {
     transition: all ease-in-out 0.5s;
     overflow-x: hidden;
 }
-.card img:hover{
+
+.card img:hover {
     opacity: 0;
 }
 
@@ -308,7 +319,7 @@ h2 {
 /* page 4 started */
 /* page 4 started */
 
-.page-4{
+.page-4 {
     width: 100%;
     min-height: 100vh;
     margin-top: 1vh;
@@ -328,7 +339,7 @@ h2 {
     border-bottom: 1.5px solid black;
 }
 
-.page-4{
+.page-4 {
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -373,42 +384,48 @@ h2 {
 /* Page 5 Started */
 
 
-#page-5{
+#page-5 {
     width: 100%;
     min-height: 100vh;
-    
+
 }
-.page-5-content{
+
+.page-5-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#page-5 video{
+
+#page-5 video {
     width: 100%;
     height: 60rem;
     position: relative;
 }
-#page-5 svg{
+
+#page-5 svg {
     position: absolute;
     height: 34.5rem;
 }
 
-.page-5-text{
+.page-5-text {
     position: absolute;
     text-align: center;
     line-height: 1.5rem;
     letter-spacing: -1px;
     color: white;
 }
-.page-5-text span{
+
+.page-5-text span {
     font-size: 4rem;
     letter-spacing: 10px;
 }
-.page-5-text h1{
+
+.page-5-text h1 {
     font-size: 3rem;
     font-weight: 100;
 }
-.page-5-text h4{
+
+.page-5-text h4 {
     font-size: 2rem;
     font-weight: 100;
 }
@@ -421,7 +438,7 @@ h2 {
 /* Page 6 Started */
 
 
-#page-6{
+#page-6 {
     width: 100%;
     height: 80vh;
 }
@@ -479,17 +496,67 @@ h2 {
 /* Page 7 Started */
 /* Page 7 Started */
 
-#page-7{
+#page-7 {
     width: 100%;
     height: 100vh;
 }
-.page-7-content{
+
+.page-7-content {
     width: 96%;
     margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid black;
 }
-.page-7-content h1{
+
+.page-7-content h1 {
     font-family: "Rejouice";
     font-size: 9rem;
     font-weight: 100;
-    border-bottom: 1px solid black;
+}
+.page-7-content h3{
+    font-family: "Rejouice";
+    font-size: 1.5rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.scroller{
+    width: 100%;
+    cursor: grab;
+    margin-top: -3.5vh;
+    z-index: 50;
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all linear 1s;
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-wrapper{
+    display: flex;
+    align-items: flex-end;
+    -webkit-user-select: none;
 }

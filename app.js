@@ -11,32 +11,32 @@ let page5 = document.querySelector("#page-5");
 let ld = gsap.timeline()
 
 function loader() {
-    
-    ld.from("#loader h3",{
-        x:50,
-        opacity : 0,
-        duration : 1,
-        stagger:0.1,
+
+    ld.from("#loader h3", {
+        x: 50,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.1,
         delay: 2
     })
-    ld.to("#loader h3",{
-        x:-20,
-        opacity : 0,
-        duration : 1,
-        stagger:0.2
+    ld.to("#loader h3", {
+        x: -20,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2
     })
-    ld.to("#loader",{
-        opacity : 0,
-        duration : 0.5
+    ld.to("#loader", {
+        opacity: 0,
+        duration: 0.5
     })
-    ld.to("#loader",{
-        display:"none",
-        duration : 0.5
+    ld.to("#loader", {
+        display: "none",
+        duration: 0.5
     })
-    ld.from(".page-1-content h1 span",{
-        y : 60,
-        opacity:0,
-        stagger : 0.1
+    ld.from(".page-1-content h1 span", {
+        y: 60,
+        opacity: 0,
+        stagger: 0.1
     })
 }
 
@@ -135,10 +135,10 @@ function mainAnimation() {
             scrub: 2,
         },
     });
-    
+
     // Page 2 Animation
     // Page 2 Animation
-    
+
     tl.from(".page-2-line", {
         y: 100,
         duration: 2,
@@ -181,11 +181,11 @@ function mainAnimation() {
             scrub: 2,
         },
     });
-    
+
     // page 4 Animation
     // page 4 Animation
-    
-    
+
+
     tl.from(".page-4-upper-text h1 span", {
         y: 100,
         duration: 2,
@@ -200,7 +200,7 @@ function mainAnimation() {
             scrub: 2,
         },
     });
-    
+
     tl.from(".page-4-line", {
         y: 50,
         duration: 2,
@@ -228,7 +228,7 @@ function mainAnimation() {
             scrub: 2,
         }
     });
-    
+
 }
 mainAnimation()
 
@@ -237,8 +237,8 @@ mainAnimation()
 // page 5 Animation
 
 function page5video() {
-    tl.from("#page-5",{
-        opacity : 0,
+    tl.from("#page-5", {
+        opacity: 0,
         scrollTrigger: {
             trigger: "#cursor2",
             scroller: "#main",
@@ -262,7 +262,7 @@ function cursorEffect2() {
             transform: "translate(-50%, -50%)"
         });
     });
-    
+
     page5.addEventListener("mouseenter", function () {
         gsap.to(cursor2, {
             opacity: 1,
@@ -293,7 +293,7 @@ function page6text() {
             scrub: 2,
         },
     });
-    
+
     tl.from(".page-6-line", {
         y: 50,
         duration: 2,
@@ -323,3 +323,20 @@ function page6text() {
     });
 }
 page6text()
+
+
+// Swiper Js
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: loop,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
