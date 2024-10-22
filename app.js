@@ -108,10 +108,6 @@ function cursorEffect() {
 }
 cursorEffect();
 
-// function page2Animation() {
-
-// }
-
 // page2Animation()
 
 let tl = gsap.timeline();
